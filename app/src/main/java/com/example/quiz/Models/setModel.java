@@ -3,7 +3,7 @@ package com.example.quiz.Models;
 public class setModel{
 
     String setNmae;
-
+    String name;
 
     public setModel(String setNmae ) {
 
