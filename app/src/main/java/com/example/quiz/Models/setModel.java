@@ -5,9 +5,10 @@ public class setModel{
     String setNmae;
     String name;
 
-    public setModel(String setNmae ) {
+    public setModel(String setNmae,String name ) {
 
         this.setNmae = setNmae;
+        this.name=name;
     }
 
     public String getSetNmae() {
