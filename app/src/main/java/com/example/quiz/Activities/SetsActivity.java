@@ -28,16 +28,16 @@ public class SetsActivity extends AppCompatActivity {
         list=new ArrayList<>();
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         binding.setsRecy.setLayoutManager(linearLayoutManager);
-        list.add(new setModel("SET-1"));
-        list.add(new setModel("SET-2"));
-        list.add(new setModel("SET-3"));
-        list.add(new setModel("SET-4"));
-        list.add(new setModel("SET-5"));
-        list.add(new setModel("SET-6"));
-        list.add(new setModel("SET-7"));
-        list.add(new setModel("SET-8"));
-        list.add(new setModel("SET-9"));
-        list.add(new setModel("SET-10"));
+        list.add(new setModel("SET-1",category1));
+        list.add(new setModel("SET-2",category1));
+        list.add(new setModel("SET-3" , category1));
+        list.add(new setModel("SET-4" , category1));
+        list.add(new setModel("SET-5",category1));
+        list.add(new setModel("SET-6",category1));
+        list.add(new setModel("SET-7",category1));
+        list.add(new setModel("SET-8",category1));
+        list.add(new setModel("SET-9",category1));
+        list.add(new setModel("SET-10",category1));
 
         SetAdapter adapter=new SetAdapter(this,list);
         binding.setsRecy.setAdapter(adapter);

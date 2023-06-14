@@ -18,4 +18,8 @@ public class setModel{
     public void setSetNmae(String setNmae) {
         this.setNmae = setNmae;
     }
+
+    public String getName(){
+        return name;
+    }
 }

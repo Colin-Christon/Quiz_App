@@ -14,7 +14,9 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.quiz.Models.History;
 import com.example.quiz.Models.QuestionModel;
+import com.example.quiz.Models.Science;
 import com.example.quiz.R;
 import com.example.quiz.databinding.ActivityQuestionBinding;
 
@@ -22,7 +24,7 @@ import java.util.ArrayList;
 
     public class QuestionActivity extends AppCompatActivity {
 
-        ArrayList<QuestionModel> list=new ArrayList<>();
+        ArrayList<QuestionModel> list1=new ArrayList<>();
         private int count=0;
         private int position=0;
         private int score=0;
@@ -41,14 +43,14 @@ import java.util.ArrayList;
                 timer.start();
 
             String setName=getIntent().getStringExtra("set");
-            if(setName.equals("SET-1"))
+            String name=getIntent().getStringExtra("name");
+            if(name.equals("History"))
             {
-                setOne();
-
+                History();
             }
-            else if(setName.equals("SET-2"))
+            else if(name.equals("Science"))
             {
-                setTwo();
+                Science();
             }
 
             for(int i=0;i<4;i++) {
@@ -56,13 +58,11 @@ import java.util.ArrayList;
                     @Override
                     public void onClick(View view) {
                         checkAnswer((Button) view);
-
                     }
                 });
-
             }
 
-            playAnimation(binding.question,0,list.get(position).getQuestion());
+            playAnimation(binding.question,0,list1.get(position).getQuestion());
 
             binding.btnNext.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -77,10 +77,10 @@ import java.util.ArrayList;
                     enableOption(true);
                     position ++;
 
-                    if(position ==list.size()){
+                    if(position ==list1.size()){
                         Intent intent=new Intent(QuestionActivity.this,ScoreActivity.class);
                         intent.putExtra("score",score);
-                        intent.putExtra("total",list.size());
+                        intent.putExtra("total",list1.size());
                         startActivity(intent);
                         finish();
                         return;
@@ -89,9 +89,21 @@ import java.util.ArrayList;
 
                     count=0;
 
-                    playAnimation(binding.question,0,list.get(position).getQuestion());
+                    playAnimation(binding.question,0,list1.get(position).getQuestion());
                 }
             });
+        }
+
+        private void  History() {
+            String setName=getIntent().getStringExtra("set");
+            final History hist=new History();
+            list1=hist.history(setName);
+        }
+
+        private void Science(){
+            String setName=getIntent().getStringExtra("set");
+            final Science sci=new Science();
+            list1=sci.science(setName);
         }
 
         private void resetTimer() {
@@ -136,17 +148,17 @@ import java.util.ArrayList;
                             if(value ==0 && count<4){
                                 String option = "";
                                 if(count ==0){
-                                    option =list.get(position).getOptionA();
+                                    option =list1.get(position).getOptionA();
                                 }
                                 else if(count==1){
-                                    option=list.get(position).getOptionB();
+                                    option=list1.get(position).getOptionB();
                                 }
 
                                 else if(count==2){
-                                    option=list.get(position).getOptionC();
+                                    option=list1.get(position).getOptionC();
                                 }
                                 else if(count==3){
-                                    option=list.get(position).getOptionD();
+                                    option=list1.get(position).getOptionD();
                                 }
 
                                 playAnimation(binding.optionContainer.getChildAt(count),0,option);
@@ -162,7 +174,7 @@ import java.util.ArrayList;
 
                                 try {
                                     ((TextView) view).setText(data);
-                                    binding.totalQuestion.setText(String.format("%d/%d", position + 1, list.size()));
+                                    binding.totalQuestion.setText(String.format("%d/%d", position + 1, list1.size()));
 
                                 }catch(Exception e){
                                     ((Button)view).setText(data);
@@ -189,18 +201,18 @@ import java.util.ArrayList;
 
         private void enableOption(boolean enable) {
 
-            for(int i=0;i<4;i++){
+            for (int i = 0; i < 4; i++) {
                 binding.optionContainer.getChildAt(i).setEnabled(enable);
 
-                if(enable){
+                if (enable) {
                     binding.optionContainer.getChildAt(i).setBackgroundResource(R.drawable.btn_opt);
                 }
 
             }
 
 
-
         }
+
 
 
         private void checkAnswer(Button selectedOption) {
@@ -213,47 +225,50 @@ import java.util.ArrayList;
             binding.btnNext.setEnabled(true);
             binding.btnShare.setAlpha(1);
 
-            if(selectedOption.getText().toString().equals(list.get(position).getCorrectAnswer())){
-
+            if(selectedOption.getText().toString().equals(list1.get(position).getCorrectAnswer())){
                 score ++;
                 selectedOption.setBackgroundResource(R.drawable.right_answ);
             }
             else{
                 selectedOption.setBackgroundResource(R.drawable.wrong_answ);
-                Button correctOption =(Button) binding.optionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
+                Button correctOption =(Button) binding.optionContainer.findViewWithTag(list1.get(position).getCorrectAnswer());
                 correctOption.setBackgroundResource(R.drawable.right_answ);
             }
         }
 
-        private void setTwo() {
-            list.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
-                    "30", " 27","26","50","27"));
+//        private void setTwo() {
+//            list1.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
+//                    "30", " 27","26","50","27"));
+//
+//            list1.add(new QuestionModel("How many heritage properties are listed in the World Heritage List? " , "25",
+//                    " 30","23","80","23"));
+//
+//            list1.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
+//                    "30", " 27","26","50","27"));
+//
+//            list1.add(new QuestionModel("How many heritage properties are listed in the World Heritage List? " , "25",
+//                    " 30","23","80","23"));
+//
+//
+//        }
 
-            list.add(new QuestionModel("How many heritage properties are listed in the World Heritage List? " , "25",
-                    " 30","23","80","23"));
+//        private void setOne() {
+//
+//            list.add(new QuestionModel("1. The fundamental principal of surveying is to work from the " , "A. part to the whole",
+//                    "B. whole to the part","C. lower level to higher level","D. higher level to the lover level","B. whole to the part"));
+//
+//            list.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
+//                    "30", "27","26","50","27"));
+//
+//            list.add(new QuestionModel("How many heritage properties are listed in the World Heritage List? " , "25",
+//                    " 30","23","80","23"));
+//
+//            list.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
+//                    "30", "27","26","50","27"));
+//
+//        }
 
-            list.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
-                    "30", " 27","26","50","27"));
-
-            list.add(new QuestionModel("How many heritage properties are listed in the World Heritage List? " , "25",
-                    " 30","23","80","23"));
-
-
-        }
-
-        private void setOne() {
-
-            list.add(new QuestionModel("1. The fundamental principal of surveying is to work from the " , "A. part to the whole",
-                    "B. whole to the part","C. lower level to higher level","D. higher level to the lover level","B. whole to the part"));
-
-            list.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
-                    "30", "27","26","50","27"));
-
-            list.add(new QuestionModel("How many heritage properties are listed in the World Heritage List? " , "25",
-                    " 30","23","80","23"));
-
-            list.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
-                    "30", "27","26","50","27"));
-
+        private void setThree(){
+            list1.add(new QuestionModel("This is the first que of Science","Yes","Noo","yes","No","Noo"));
         }
     }
