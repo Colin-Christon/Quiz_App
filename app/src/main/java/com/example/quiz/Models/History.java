@@ -181,7 +181,6 @@ public class History {
         list.add(new QuestionModel("8. Who was the first Emperor of the Gupta Empire in ancient India?", "Chandragupta Maurya", "Ashoka the Great", "Samudragupta", "Chandragupta I", "Chandragupta I"));
         list.add(new QuestionModel("9. Who wrote the famous play 'Macbeth'?", "William Shakespeare", "John Milton", "Geoffrey Chaucer", "Jane Austen", "William Shakespeare"));
         list.add(new QuestionModel("10. In which year did the Berlin Wall fall?", "1985", "1989", "1991", "1995", "1989"));
-
     }
 
 }

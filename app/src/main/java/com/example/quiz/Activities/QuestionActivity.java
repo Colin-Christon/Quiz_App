@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.quiz.Models.History;
+import com.example.quiz.Models.Mathematics;
 import com.example.quiz.Models.QuestionModel;
 import com.example.quiz.Models.Science;
 import com.example.quiz.R;
@@ -51,6 +52,14 @@ import java.util.ArrayList;
             else if(name.equals("Science"))
             {
                 Science();
+            }
+            else if(name.equals("Geography"))
+            {
+                Geography();
+            }
+            else if(name.equals("Mathematics"))
+            {
+                Mathematics();
             }
 
             for(int i=0;i<4;i++) {
@@ -104,6 +113,18 @@ import java.util.ArrayList;
             String setName=getIntent().getStringExtra("set");
             final Science sci=new Science();
             list1=sci.science(setName);
+        }
+
+        private void Mathematics(){
+            String setName=getIntent().getStringExtra("set");
+            final Mathematics math=new Mathematics();
+            list1=math.mathematics(setName);
+        }
+
+        private void Geography(){
+            String setName=getIntent().getStringExtra("set");
+            final Mathematics math=new Mathematics();
+            list1=math.mathematics(setName);
         }
 
         private void resetTimer() {
@@ -236,39 +257,5 @@ import java.util.ArrayList;
             }
         }
 
-//        private void setTwo() {
-//            list1.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
-//                    "30", " 27","26","50","27"));
-//
-//            list1.add(new QuestionModel("How many heritage properties are listed in the World Heritage List? " , "25",
-//                    " 30","23","80","23"));
-//
-//            list1.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
-//                    "30", " 27","26","50","27"));
-//
-//            list1.add(new QuestionModel("How many heritage properties are listed in the World Heritage List? " , "25",
-//                    " 30","23","80","23"));
-//
-//
-//        }
 
-//        private void setOne() {
-//
-//            list.add(new QuestionModel("1. The fundamental principal of surveying is to work from the " , "A. part to the whole",
-//                    "B. whole to the part","C. lower level to higher level","D. higher level to the lover level","B. whole to the part"));
-//
-//            list.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
-//                    "30", "27","26","50","27"));
-//
-//            list.add(new QuestionModel("How many heritage properties are listed in the World Heritage List? " , "25",
-//                    " 30","23","80","23"));
-//
-//            list.add(new QuestionModel("How many trade points have been opened between Nepal and India ?" ,
-//                    "30", "27","26","50","27"));
-//
-//        }
-
-        private void setThree(){
-            list1.add(new QuestionModel("This is the first que of Science","Yes","Noo","yes","No","Noo"));
-        }
     }

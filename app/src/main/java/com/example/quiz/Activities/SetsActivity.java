@@ -23,15 +23,15 @@ public class SetsActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         getSupportActionBar().hide();
 //        binding.category.setText("Science");
-        String category1=getIntent().getStringExtra("science");
+        String category1=getIntent().getStringExtra("value");
         binding.category.setText(category1);
         list=new ArrayList<>();
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         binding.setsRecy.setLayoutManager(linearLayoutManager);
         list.add(new setModel("SET-1",category1));
         list.add(new setModel("SET-2",category1));
-        list.add(new setModel("SET-3" , category1));
-        list.add(new setModel("SET-4" , category1));
+        list.add(new setModel("SET-3" ,category1));
+        list.add(new setModel("SET-4" ,category1));
         list.add(new setModel("SET-5",category1));
         list.add(new setModel("SET-6",category1));
         list.add(new setModel("SET-7",category1));

@@ -1,6 +1,7 @@
 package com.example.quiz;
 
 import static com.example.quiz.R.id.history;
+import static com.example.quiz.R.id.mathematics;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -13,7 +14,7 @@ import android.content.Intent;
 import com.example.quiz.Activities.SetsActivity;
 
 public class MainActivity extends AppCompatActivity {
-    CardView history,science;
+    CardView history,science,mathematics,geography;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +24,16 @@ public class MainActivity extends AppCompatActivity {
 
         history=findViewById(R.id.history);
         science=findViewById(R.id.science);
+        mathematics=findViewById(R.id.mathematics);
+        geography=findViewById(R.id.geography);
+
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent intent=new Intent(MainActivity.this, SetsActivity.class);
                 String value="History";
-                intent.putExtra("science",value);
+                intent.putExtra("value",value);
                 startActivity(intent);
 
 
@@ -41,7 +45,27 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this, SetsActivity.class);
                 String value="Science";
-                intent.putExtra("science",value);
+                intent.putExtra("value",value);
+                startActivity(intent);
+            }
+        });
+
+        mathematics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, SetsActivity.class);
+                String value="Mathematics";
+                intent.putExtra("value",value);
+                startActivity(intent);
+            }
+        });
+
+        geography.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, SetsActivity.class);
+                String value="Geography";
+                intent.putExtra("value",value);
                 startActivity(intent);
             }
         });
