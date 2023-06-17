@@ -25,13 +25,12 @@
             android:layout_height="196dp"
             android:layout_marginTop="124dp"
             android:requiresFadingEdge="horizontal"
-            android:rotationX="10"
             android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/quiz_card"
-            app:srcCompat="@drawable/chemistry" />
+            app:srcCompat="@drawable/quiz" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/quiz_card"

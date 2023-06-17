@@ -62,7 +62,8 @@
 
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            app:srcCompat="@drawable/history" />
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/history_book" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -97,6 +98,7 @@
 
                             android:layout_width="90dp"
                             android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/chemistry" />
 
                         <TextView
@@ -132,6 +134,7 @@
 
                             android:layout_width="90dp"
                             android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/mathematics" />
 
                         <TextView
@@ -167,6 +170,7 @@
 
                             android:layout_width="90dp"
                             android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/history" />
 
                         <TextView
@@ -202,7 +206,8 @@
 
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            app:srcCompat="@drawable/history" />
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/operative" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -237,7 +242,8 @@
 
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            app:srcCompat="@drawable/history" />
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/app_settings" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -272,7 +278,8 @@
 
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            app:srcCompat="@drawable/history" />
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/networking" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -307,7 +314,8 @@
 
                             android:layout_width="90dp"
                             android:layout_height="90dp"
-                            app:srcCompat="@drawable/history" />
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/data_science" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -343,7 +351,9 @@
                         <ImageView
 
                             android:layout_width="90dp"
-                            android:layout_height="90dp" />
+                            android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/hard_work" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -362,7 +372,7 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
                     android:persistentDrawingCache="animation"
@@ -380,6 +390,7 @@
 
                             android:layout_width="90dp"
                             android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
                             app:srcCompat="@drawable/compile" />
 
                         <TextView
