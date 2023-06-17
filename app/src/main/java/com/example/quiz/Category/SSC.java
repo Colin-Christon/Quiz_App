@@ -1,11 +1,14 @@
-package com.example.quiz.Models;
+package com.example.quiz.Category;
+
+import com.example.quiz.Models.QuestionModel;
 
 import java.util.ArrayList;
 
-public class Geography {
+public class SSC {
+
     ArrayList<QuestionModel> list=new ArrayList<>();
 
-    public ArrayList<QuestionModel> geography(String setName){
+    public ArrayList<QuestionModel> ssc(String setName){
         if(setName.equals("SET-1")){
             setOne();
         }
@@ -37,9 +40,9 @@ public class Geography {
             setTen();
         }
         return list;
-}
+    }
 
-private void setOne(){
+    private void setOne(){
 
     }
 

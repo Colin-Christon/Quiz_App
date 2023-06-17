@@ -1,4 +1,6 @@
-package com.example.quiz.Models;
+package com.example.quiz.Category;
+
+import com.example.quiz.Models.QuestionModel;
 
 import java.util.ArrayList;
 

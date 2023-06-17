@@ -14,11 +14,17 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.quiz.Models.Geography;
-import com.example.quiz.Models.History;
-import com.example.quiz.Models.Mathematics;
+import com.example.quiz.Category.Data_structure;
+import com.example.quiz.Category.Geography;
+import com.example.quiz.Category.History;
+import com.example.quiz.Category.Mathematics;
+import com.example.quiz.Category.Mobile_dev;
+import com.example.quiz.Category.Networking;
+import com.example.quiz.Category.Operating_system;
+import com.example.quiz.Category.SSC;
+import com.example.quiz.Category.Time_work;
 import com.example.quiz.Models.QuestionModel;
-import com.example.quiz.Models.Science;
+import com.example.quiz.Category.Science;
 import com.example.quiz.R;
 import com.example.quiz.databinding.ActivityQuestionBinding;
 
@@ -62,6 +68,30 @@ import java.util.ArrayList;
             {
                 Mathematics();
             }
+            else if(name.equals("Data_structure"))
+            {
+                 Data_structure();
+            }
+            else if(name.equals("Networking"))
+            {
+                Networking();
+            }
+            else if(name.equals("Mobile_dev"))
+            {
+                Mobile_dev();
+            }
+            else if(name.equals("Operating_system"))
+            {
+                Operating_system();
+            }
+            else if(name.equals("Time_work"))
+            {
+                Time_work();
+            }
+            else if(name.equals("SSC"))
+            {
+                SSC();
+            }
 
             for(int i=0;i<4;i++) {
                 binding.optionContainer.getChildAt(i).setOnClickListener(new View.OnClickListener() {
@@ -104,6 +134,8 @@ import java.util.ArrayList;
             });
         }
 
+
+
         private void  History() {
             String setName=getIntent().getStringExtra("set");
             final History hist=new History();
@@ -126,6 +158,37 @@ import java.util.ArrayList;
             String setName=getIntent().getStringExtra("set");
             final Geography geo=new Geography();
             list1=geo.geography(setName);
+        }
+
+        private void Mobile_dev(){
+            String setName=getIntent().getStringExtra("set");
+            final Mobile_dev mob=new Mobile_dev();
+            list1=mob.mobile_dev(setName);
+        }
+        private void Operating_system(){
+            String setName=getIntent().getStringExtra("set");
+            final Operating_system ope=new Operating_system();
+            list1=ope.operating_system(setName);
+        }
+        private void Networking(){
+            String setName=getIntent().getStringExtra("set");
+            final Networking net=new Networking();
+            list1=net.networking(setName);
+        }
+        private void Data_structure(){
+            String setName=getIntent().getStringExtra("set");
+            final Data_structure dat=new Data_structure();
+            list1=dat.data_structure(setName);
+        }
+        private void Time_work(){
+            String setName=getIntent().getStringExtra("set");
+            final Time_work time=new Time_work();
+            list1=time.time_work(setName);
+        }
+        private void SSC(){
+            String setName=getIntent().getStringExtra("set");
+            final SSC ss=new SSC();
+            list1=ss.ssc(setName);
         }
 
         private void resetTimer() {
