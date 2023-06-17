@@ -14,6 +14,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.quiz.Models.Geography;
 import com.example.quiz.Models.History;
 import com.example.quiz.Models.Mathematics;
 import com.example.quiz.Models.QuestionModel;
@@ -123,8 +124,8 @@ import java.util.ArrayList;
 
         private void Geography(){
             String setName=getIntent().getStringExtra("set");
-            final Mathematics math=new Mathematics();
-            list1=math.mathematics(setName);
+            final Geography geo=new Geography();
+            list1=geo.geography(setName);
         }
 
         private void resetTimer() {
