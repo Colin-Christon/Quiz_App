@@ -115,7 +115,7 @@ import java.util.ArrayList;
                         timer.cancel();
                     }
                     timer.start();
-                    binding.btnNext.setEnabled(true);
+                    binding.btnNext.setEnabled(false);
                     binding.btnNext.setAlpha((float) 0.6);
                     enableOption(true);
                     position ++;

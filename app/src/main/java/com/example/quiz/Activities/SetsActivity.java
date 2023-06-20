@@ -4,8 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.quiz.Adapters.SetAdapter;
+import com.example.quiz.MainActivity;
 import com.example.quiz.Models.setModel;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.quiz.R;
 import com.example.quiz.databinding.ActivitySetsBinding;
@@ -41,5 +45,13 @@ public class SetsActivity extends AppCompatActivity {
 
         SetAdapter adapter=new SetAdapter(this,list);
         binding.setsRecy.setAdapter(adapter);
+
+        binding.backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(SetsActivity.this , MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
