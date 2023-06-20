@@ -1,5 +1,7 @@
 package com.example.quiz.Activities;
 
+import static java.util.Collection.*;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,6 +29,7 @@ import com.example.quiz.Models.QuestionModel;
 import com.example.quiz.Category.Science;
 import com.example.quiz.R;
 import com.example.quiz.databinding.ActivityQuestionBinding;
+import java.util.Collections;
 
 import java.util.ArrayList;
 
@@ -101,7 +104,7 @@ import java.util.ArrayList;
                     }
                 });
             }
-
+            Collections.shuffle(list1);
             playAnimation(binding.question,0,list1.get(position).getQuestion());
 
             binding.btnNext.setOnClickListener(new View.OnClickListener() {
@@ -112,8 +115,8 @@ import java.util.ArrayList;
                         timer.cancel();
                     }
                     timer.start();
-                    binding.btnNext.setEnabled(false);
-                    binding.btnNext.setAlpha((float) 0.3);
+                    binding.btnNext.setEnabled(true);
+                    binding.btnNext.setAlpha((float) 0.6);
                     enableOption(true);
                     position ++;
 
@@ -128,7 +131,6 @@ import java.util.ArrayList;
 
 
                     count=0;
-
                     playAnimation(binding.question,0,list1.get(position).getQuestion());
                 }
             });
@@ -202,22 +204,26 @@ import java.util.ArrayList;
 
                 @Override
                 public void onFinish() {
-                    Dialog dialog=new Dialog(QuestionActivity.this);
-                    dialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
-                    dialog.setContentView(R.layout.timeout_dialog);
-                    dialog.findViewById(R.id.tryAgain).setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
+                    try {
+                        Dialog dialog = new Dialog(QuestionActivity.this);
+                        dialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+                        dialog.setContentView(R.layout.timeout_dialog);
+                        dialog.findViewById(R.id.tryAgain).setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
 
-                            Intent intent=new Intent(QuestionActivity.this,SetsActivity.class);
-                            startActivity(intent);
-                            finish();
+                                Intent intent = new Intent(QuestionActivity.this, SetsActivity.class);
+                                startActivity(intent);
+                                finish();
 
-                        }
-                    });
+                            }
+                        });
 
-                    dialog.show();
-
+                        dialog.show();
+                    }
+                    catch (Exception e){
+                        System.out.println("Error has been happend "+e);
+                    }
 
                 }
             };
