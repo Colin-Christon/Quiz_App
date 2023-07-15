@@ -1,15 +1,12 @@
 package com.example.quiz;
 
-import static com.example.quiz.R.id.history;
-import static com.example.quiz.R.id.mathematics;
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-
-import android.annotation.SuppressLint;
-import android.os.Bundle;
-import android.view.View;
-import android.content.Intent;
 
 import com.example.quiz.Activities.SetsActivity;
 
@@ -42,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 String value="History";
                 intent.putExtra("value",value);
                 startActivity(intent);
-
 
             }
         });

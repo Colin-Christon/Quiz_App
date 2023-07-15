@@ -53,7 +53,6 @@ public class History {
         list.add(new QuestionModel(" Which battle led to the establishment of the British East India Company's rule in India?", "Battle of Plassey", "Battle of Panipat", "Battle of Buxar", "Battle of Haldighati", "Battle of Plassey"));
         list.add(new QuestionModel(" Who composed the Indian national anthem, 'Jana Gana Mana'?", "Rabindranath Tagore", "Bankim Chandra Chattopadhyay", "Swami Vivekananda", "Mahatma Gandhi", "Rabindranath Tagore"));
 
-
     }
     private void setTwo(){
         list.add(new QuestionModel(" Who is known as the 'Father of the Nation' in India?", "Rajendra Prasad", "Jawaharlal Nehru", "Mahatma Gandhi", "Subhash Chandra Bose", "Mahatma Gandhi"));
