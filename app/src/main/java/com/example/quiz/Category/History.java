@@ -46,9 +46,9 @@ public class History {
         list.add(new QuestionModel(" Which Indian state was formerly known as Bombay?", "Maharashtra", "Gujarat", "Tamil Nadu", "Kerala", "Maharashtra"));
         list.add(new QuestionModel(" Who was the first woman to fly solo across the Atlantic Ocean?", "Amelia Earhart", "Valentina Tereshkova", "Sally Ride", "Bessie Coleman", "Amelia Earhart"));
         list.add(new QuestionModel(" When did India gain its independence from British rule?", "1942", "1945", "1947", "1950", "1947"));
-        list.add(new QuestionModel(" Who was the first Mughal Emperor of India?", "Babur", "Akbar", "Jahangir", "Shah Jahan", "Babur"));
+        list.add(new QuestionModel(" Who was the first Mughal Emperor of India?",  "Akbar", "Jahangir", "Shah Jahan","Babur", "Babur"));
         list.add(new QuestionModel(" Which Indian leader is known as the 'Nightingle of India'?", "Sarojini Naidu", "Kamala Nehru", "Indira Gandhi", "Rajkumari Amrit Kaur", "Sarojini Naidu"));
-        list.add(new QuestionModel(" In which year did the Indian National Congress hold its first session?", "1885", "1905", "1919", "1947", "1885"));
+        list.add(new QuestionModel(" In which year did the Indian National Congress hold its first session?",  "1905", "1919","1885", "1947", "1885"));
         list.add(new QuestionModel(" Who is considered the 'Father of Modern India'?", "Mahatma Gandhi", "Jawaharlal Nehru", "Subhash Chandra Bose", "Rabindranath Tagore", "Rabindranath Tagore"));
         list.add(new QuestionModel(" Which battle led to the establishment of the British East India Company's rule in India?", "Battle of Plassey", "Battle of Panipat", "Battle of Buxar", "Battle of Haldighati", "Battle of Plassey"));
         list.add(new QuestionModel(" Who composed the Indian national anthem, 'Jana Gana Mana'?", "Rabindranath Tagore", "Bankim Chandra Chattopadhyay", "Swami Vivekananda", "Mahatma Gandhi", "Rabindranath Tagore"));

@@ -51,7 +51,7 @@ public class Science {
         list.add(new QuestionModel(" What is the process by which plants convert sunlight into chemical energy?", "Respiration", "Photosynthesis", "Transpiration", "Fermentation", "Photosynthesis"));
         list.add(new QuestionModel(" Which scientist proposed the theory of general relativity?", "Isaac Newton", "Albert Einstein", "Charles Darwin", "Marie Curie", "Albert Einstein"));
         list.add(new QuestionModel(" What is the smallest unit of matter?", "Atom", "Molecule", "Cell", "Particle", "Atom"));
-        list.add(new QuestionModel(" What is the speed of light in a vacuum?", "300,000 km/s", "150,000 km/s", "600,000 km/s", "900,000 km/s", "300,000 km/s"));
+        list.add(new QuestionModel(" What is the speed of light in a vacuum?", "150,000 km/s", "600,000 km/s","300,000 km/s",  "900,000 km/s", "300,000 km/s"));
         list.add(new QuestionModel(" What is the chemical formula for water?", "H2O", "CO2", "NaCl", "C6H12O6", "H2O"));
 
     }
@@ -62,18 +62,18 @@ public class Science {
         list.add(new QuestionModel(" What is the process by which plants release water vapor into the atmosphere?", "Condensation", "Transpiration", "Evaporation", "Precipitation", "Transpiration"));
         list.add(new QuestionModel(" What is the chemical symbol for the element gold?", "Au", "Ag", "Fe", "Cu", "Au"));
         list.add(new QuestionModel(" What is the largest planet in our solar system?", "Venus", "Saturn", "Jupiter", "Uranus", "Jupiter"));
-        list.add(new QuestionModel(" What is the study of living organisms called?", "Biology", "Chemistry", "Physics", "Geology", "Biology"));
+        list.add(new QuestionModel(" What is the study of living organisms called?",  "Chemistry","Biology", "Physics", "Geology", "Biology"));
         list.add(new QuestionModel(" Which scientist discovered the theory of evolution?", "Isaac Newton", "Albert Einstein", "Charles Darwin", "Marie Curie", "Charles Darwin"));
         list.add(new QuestionModel(" What is the SI unit of force?", "Pascal", "Joule", "Newton", "Watt", "Newton"));
         list.add(new QuestionModel(" What is the process by which solid ice turns directly into water vapor?", "Sublimation", "Evaporation", "Condensation", "Freezing", "Sublimation"));
-        list.add(new QuestionModel(" What is the chemical formula for carbon dioxide?", "CO2", "H2O", "NaCl", "C6H12O6", "CO2"));
+        list.add(new QuestionModel(" What is the chemical formula for carbon dioxide?",  "H2O", "NaCl", "C6H12O6","CO2", "CO2"));
 
     }
     private void setThree(){
         list.add(new QuestionModel(" What is the largest planet in our solar system?", "Mars", "Saturn", "Jupiter", "Neptune", "Jupiter"));
         list.add(new QuestionModel(" What is the SI unit of pressure?", "Pascal", "Newton", "Joule", "Watt", "Pascal"));
         list.add(new QuestionModel(" Which scientist is known for discovering the laws of motion?", "Isaac Newton", "Albert Einstein", "Charles Darwin", "Marie Curie", "Isaac Newton"));
-        list.add(new QuestionModel(" What is the chemical symbol for the element iron?", "Fe", "Au", "Ag", "Cu", "Fe"));
+        list.add(new QuestionModel(" What is the chemical symbol for the element iron?",  "Au","Fe", "Ag", "Cu", "Fe"));
         list.add(new QuestionModel(" What is the process by which a solid changes directly into a gas?", "Condensation", "Evaporation", "Sublimation", "Melting", "Sublimation"));
         list.add(new QuestionModel(" What is the study of the Earth's physical structure and history called?", "Biology", "Chemistry", "Physics", "Geology", "Geology"));
         list.add(new QuestionModel(" What is the speed of sound in air at room temperature?", "343 m/s", "150 m/s", "700 m/s", "1000 m/s", "343 m/s"));
@@ -85,13 +85,13 @@ public class Science {
     private void setFour()
     {
         list.add(new QuestionModel(" What is the chemical symbol for the element carbon?", "C", "O", "H", "N", "C"));
-        list.add(new QuestionModel(" Which planet is known as the Blue Planet?", "Earth", "Mars", "Jupiter", "Venus", "Earth"));
+        list.add(new QuestionModel(" Which planet is known as the Blue Planet?",  "Mars", "Jupiter", "Earth","Venus", "Earth"));
         list.add(new QuestionModel(" What is the study of the universe called?", "Biology", "Chemistry", "Physics", "Astronomy", "Astronomy"));
         list.add(new QuestionModel(" What is the chemical symbol for the element silver?", "Ag", "Au", "Fe", "Cu", "Ag"));
-        list.add(new QuestionModel(" What is the second most abundant gas in the Earth's atmosphere?", "Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen", "Oxygen"));
-        list.add(new QuestionModel(" What is the process by which a gas changes into a solid?", "Condensation", "Evaporation", "Deposition", "Melting", "Deposition"));
+        list.add(new QuestionModel(" What is the second most abundant gas in the Earth's atmosphere?", "Carbon dioxide","Oxygen",  "Nitrogen", "Hydrogen", "Oxygen"));
+        list.add(new QuestionModel(" What is the process by which a gas changes into a solid?", "Condensation", "Evaporation","Melting", "Deposition",  "Deposition"));
         list.add(new QuestionModel(" Which scientist is known for the discovery of gravity?", "Isaac Newton", "Albert Einstein", "Charles Darwin", "Marie Curie", "Isaac Newton"));
-        list.add(new QuestionModel(" What is the SI unit of energy?", "Pascal", "Joule", "Newton", "Watt", "Joule"));
+        list.add(new QuestionModel(" What is the SI unit of energy?", "Pascal",  "Newton","Joule", "Watt", "Joule"));
         list.add(new QuestionModel(" What is the process by which a liquid changes into a gas?", "Evaporation", "Condensation", "Sublimation", "Melting", "Evaporation"));
         list.add(new QuestionModel(" What is the chemical formula for glucose?", "H2O", "CO2", "NaCl", "C6H12O6", "C6H12O6"));
 

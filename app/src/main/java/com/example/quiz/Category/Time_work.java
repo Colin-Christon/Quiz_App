@@ -58,13 +58,13 @@ public class Time_work {
 
     private void setTwo(){
         list.add(new QuestionModel("A can complete a work in 14 days, and B can complete the same work in 21 days. How long will it take if they work together?", "6 days", "7 days", "8 days", "9 days", "7 days"));
-        list.add(new QuestionModel("If 7 men can complete a work in 18 days, how many days will it take for 5 men to complete the same work?", "22 days", "25 days", "28 days", "30 days", "25 days"));
+        list.add(new QuestionModel("If 7 men can complete a work in 18 days, how many days will it take for 5 men to complete the same work?", "22 days",  "28 days", "30 days","25 days", "25 days"));
         list.add(new QuestionModel("A can complete a work in 9 days and B can complete the same work in 12 days. In how many days can they complete the work if they work together?", "4 days", "4.5 days", "5 days", "5.5 days", "4.5 days"));
         list.add(new QuestionModel("If 4 men can complete a work in 10 days, how many men are required to complete the same work in 5 days?", "8 men", "10 men", "12 men", "16 men", "8 men"));
         list.add(new QuestionModel("A can complete a work in 18 days and B can complete the same work in 24 days. In how many days can they complete the work if they work together?", "9 days", "10 days", "11 days", "12 days", "9 days"));
         list.add(new QuestionModel("If 12 men can complete a work in 15 days, how many days will it take for 18 men to complete the same work?", "6 days", "7 days", "8 days", "9 days", "6 days"));
         list.add(new QuestionModel("A can complete a work in 16 days and B can complete the same work in 20 days. In how many days can they complete the work if they work together?", "8 days", "9 days", "10 days", "11 days", "9 days"));
-        list.add(new QuestionModel("If 9 men can complete a work in 12 days, how many days will it take for 15 men to complete the same work?", "6 days", "7 days", "8 days", "9 days", "7 days"));
+        list.add(new QuestionModel("If 9 men can complete a work in 12 days, how many days will it take for 15 men to complete the same work?", "7 days","6 days",  "8 days", "9 days", "7 days"));
         list.add(new QuestionModel("A can complete a work in 21 days and B can complete the same work in 28 days. In how many days can they complete the work if they work together?", "10 days", "11 days", "12 days", "14 days", "10 days"));
         list.add(new QuestionModel("If 6 men can complete a work in 16 days, how many men are required to complete the same work in 8 days?", "12 men", "14 men", "16 men", "18 men", "16 men"));
 
@@ -101,14 +101,14 @@ public class Time_work {
     private void setFive(){
         list.add(new QuestionModel("A can complete a work in 12 days, and B can complete the same work in 24 days. How long will it take if they work together?", "8 days", "8.2 days", "8.4 days", "8.6 days", "8 days"));
         list.add(new QuestionModel("If 6 men can complete a work in 16 days, how many days will it take for 8 men to complete the same work?", "12 days", "12.4 days", "12.8 days", "13.2 days", "12 days"));
-        list.add(new QuestionModel("A can complete a work in 16 days and B can complete the same work in 32 days. In how many days can they complete the work if they work together?", "10 days", "10.4 days", "10.8 days", "11.2 days", "10 days"));
+        list.add(new QuestionModel("A can complete a work in 16 days and B can complete the same work in 32 days. In how many days can they complete the work if they work together?",  "10.4 days","10 days", "10.8 days", "11.2 days", "10 days"));
         list.add(new QuestionModel("If 9 men can complete a work in 15 days, how many days will it take for 6 men to complete the same work?", "22.5 days", "23 days", "23.5 days", "24 days", "23.5 days"));
         list.add(new QuestionModel("A can complete a work in 15 days and B can complete the same work in 30 days. In how many days can they complete the work if they work together?", "10 days", "10.5 days", "11 days", "11.5 days", "10.5 days"));
-        list.add(new QuestionModel("If 7 men can complete a work in 18 days, how many days will it take for 12 men to complete the same work?", "10.5 days", "11 days", "11.5 days", "12 days", "11 days"));
+        list.add(new QuestionModel("If 7 men can complete a work in 18 days, how many days will it take for 12 men to complete the same work?", "10.5 days",  "11.5 days", "12 days","11 days", "11 days"));
         list.add(new QuestionModel("A can complete a work in 13 days and B can complete the same work in 26 days. In how many days can they complete the work if they work together?", "8.2 days", "8.4 days", "8.6 days", "8.8 days", "8.4 days"));
         list.add(new QuestionModel("If 5 men can complete a work in 12 days, how many days will it take for 10 men to complete the same work?", "6 days", "6.2 days", "6.4 days", "6.6 days", "6.2 days"));
         list.add(new QuestionModel("A can complete a work in 10 days and B can complete the same work in 15 days. In how many days can they complete the work if they work together?", "5.5 days", "5.6 days", "5.7 days", "5.8 days", "5.6 days"));
-        list.add(new QuestionModel("If 8 men can complete a work in 20 days, how many days will it take for 12 men to complete the same work?", "13.3 days", "13.6 days", "13.9 days", "14.2 days", "13.6 days"));
+        list.add(new QuestionModel("If 8 men can complete a work in 20 days, how many days will it take for 12 men to complete the same work?", "13.3 days",  "13.9 days", "13.6 days","14.2 days", "13.6 days"));
 
     }
     private void setSix(){
@@ -151,29 +151,29 @@ public class Time_work {
 
     }
     private void setNine(){
-        list.add(new QuestionModel("A can complete a work in 20 days, and B can complete the same work in 24 days. How long will it take if they work together?", "10.909 days", "11 days", "11.1 days", "11.2 days", "11 days"));
+        list.add(new QuestionModel("A can complete a work in 20 days, and B can complete the same work in 24 days. How long will it take if they work together?", "10.909 days",  "11.1 days", "11.2 days","11 days", "11 days"));
         list.add(new QuestionModel("If 4 men can complete a work in 14 days, how many days will it take for 6 men to complete the same work?", "9.333 days", "9.4 days", "9.5 days", "9.6 days", "9.4 days"));
-        list.add(new QuestionModel("A can complete a work in 18 days and B can complete the same work in 24 days. In how many days can they complete the work if they work together?", "10.286 days", "10.3 days", "10.4 days", "10.5 days", "10.4 days"));
+        list.add(new QuestionModel("A can complete a work in 18 days and B can complete the same work in 24 days. In how many days can they complete the work if they work together?", "10.3 days","10.286 days",  "10.4 days", "10.5 days", "10.4 days"));
         list.add(new QuestionModel("If 5 men can complete a work in 12 days, how many days will it take for 8 men to complete the same work?", "7.5 days", "7.6 days", "7.7 days", "7.8 days", "7.6 days"));
-        list.add(new QuestionModel("A can complete a work in 14 days and B can complete the same work in 28 days. In how many days can they complete the work if they work together?", "9.333 days", "9.4 days", "9.5 days", "9.6 days", "9.4 days"));
+        list.add(new QuestionModel("A can complete a work in 14 days and B can complete the same work in 28 days. In how many days can they complete the work if they work together?", "9.333 days",  "9.5 days","9.4 days", "9.6 days", "9.4 days"));
         list.add(new QuestionModel("If 7 men can complete a work in 15 days, how many days will it take for 12 men to complete the same work?", "8.75 days", "8.8 days", "8.9 days", "9 days", "8.8 days"));
         list.add(new QuestionModel("A can complete a work in 16 days and B can complete the same work in 32 days. In how many days can they complete the work if they work together?", "10.667 days", "10.7 days", "10.8 days", "10.9 days", "10.7 days"));
         list.add(new QuestionModel("If 5 men can complete a work in 10 days, how many days will it take for 10 men to complete the same work?", "5 days", "5.1 days", "5.2 days", "5.3 days", "5.1 days"));
-        list.add(new QuestionModel("A can complete a work in 15 days and B can complete the same work in 25 days. In how many days can they complete the work if they work together?", "9 days", "9.1 days", "9.2 days", "9.3 days", "9.1 days"));
-        list.add(new QuestionModel("If 8 men can complete a work in 20 days, how many days will it take for 12 men to complete the same work?", "13.333 days", "13.4 days", "13.5 days", "13.6 days", "13.4 days"));
+        list.add(new QuestionModel("A can complete a work in 15 days and B can complete the same work in 25 days. In how many days can they complete the work if they work together?", "9 days",  "9.2 days", "9.3 days","9.1 days", "9.1 days"));
+        list.add(new QuestionModel("If 8 men can complete a work in 20 days, how many days will it take for 12 men to complete the same work?", "13.333 days",  "13.5 days", "13.6 days","13.4 days", "13.4 days"));
 
     }
     private void setTen(){
-        list.add(new QuestionModel("A can complete a work in 10 days, and B can complete the same work in 15 days. How long will it take if they work together?", "6 days", "6.2 days", "6.4 days", "6.6 days", "6.2 days"));
+        list.add(new QuestionModel("A can complete a work in 10 days, and B can complete the same work in 15 days. How long will it take if they work together?", "6.2 days","6 days",  "6.4 days", "6.6 days", "6.2 days"));
         list.add(new QuestionModel("If 4 men can complete a work in 16 days, how many days will it take for 6 men to complete the same work?", "10.67 days", "10.8 days", "10.9 days", "11 days", "10.8 days"));
-        list.add(new QuestionModel("A can complete a work in 12 days and B can complete the same work in 18 days. In how many days can they complete the work if they work together?", "7.2 days", "7.3 days", "7.4 days", "7.5 days", "7.3 days"));
+        list.add(new QuestionModel("A can complete a work in 12 days and B can complete the same work in 18 days. In how many days can they complete the work if they work together?", "7.2 days",  "7.4 days","7.3 days", "7.5 days", "7.3 days"));
         list.add(new QuestionModel("If 5 men can complete a work in 14 days, how many days will it take for 8 men to complete the same work?", "8 days", "8.1 days", "8.2 days", "8.3 days", "8.1 days"));
-        list.add(new QuestionModel("A can complete a work in 14 days and B can complete the same work in 21 days. In how many days can they complete the work if they work together?", "8 days", "8.1 days", "8.2 days", "8.3 days", "8.1 days"));
+        list.add(new QuestionModel("A can complete a work in 14 days and B can complete the same work in 21 days. In how many days can they complete the work if they work together?", "8 days",  "8.2 days", "8.3 days","8.1 days", "8.1 days"));
         list.add(new QuestionModel("If 7 men can complete a work in 12 days, how many days will it take for 12 men to complete the same work?", "6.545 days", "6.6 days", "6.7 days", "6.8 days", "6.6 days"));
         list.add(new QuestionModel("A can complete a work in 15 days and B can complete the same work in 30 days. In how many days can they complete the work if they work together?", "10 days", "10.1 days", "10.2 days", "10.3 days", "10.1 days"));
-        list.add(new QuestionModel("If 8 men can complete a work in 18 days, how many days will it take for 12 men to complete the same work?", "12 days", "12.1 days", "12.2 days", "12.3 days", "12.1 days"));
+        list.add(new QuestionModel("If 8 men can complete a work in 18 days, how many days will it take for 12 men to complete the same work?", "12.1 days","12 days",  "12.2 days", "12.3 days", "12.1 days"));
         list.add(new QuestionModel("A can complete a work in 13 days and B can complete the same work in 26 days. In how many days can they complete the work if they work together?", "8.2 days", "8.3 days", "8.4 days", "8.5 days", "8.3 days"));
-        list.add(new QuestionModel("If 5 men can complete a work in 16 days, how many days will it take for 10 men to complete the same work?", "8 days", "8.1 days", "8.2 days", "8.3 days", "8.1 days"));
+        list.add(new QuestionModel("If 5 men can complete a work in 16 days, how many days will it take for 10 men to complete the same work?", "8 days",  "8.2 days", "8.3 days","8.1 days", "8.1 days"));
 
     }
 }

@@ -45,10 +45,10 @@ private void setOne(){
     list.add(new QuestionModel("Which continent is known as the 'Dark Continent'?", "Africa", "Asia", "Europe", "North America", "Africa"));
     list.add(new QuestionModel("What is the longest river in the world?", "Amazon River", "Nile River", "Yangtze River", "Mississippi River", "Nile River"));
     list.add(new QuestionModel("What is the largest desert in the world?", "Sahara Desert", "Gobi Desert", "Arabian Desert", "Great Victoria Desert", "Sahara Desert"));
-    list.add(new QuestionModel("Which country is the largest producer of coffee?", "Brazil", "Colombia", "Vietnam", "Ethiopia", "Brazil"));
+    list.add(new QuestionModel("Which country is the largest producer of coffee?",  "Colombia", "Vietnam", "Brazil","Ethiopia", "Brazil"));
     list.add(new QuestionModel("Which mountain range is located in South America?", "Andes", "Rocky Mountains", "Himalayas", "Alps", "Andes"));
     list.add(new QuestionModel("Which country is the smallest in terms of land area?", "Maldives", "Monaco", "Vatican City", "Nauru", "Vatican City"));
-    list.add(new QuestionModel("Which ocean is the largest?", "Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"));
+    list.add(new QuestionModel("Which ocean is the largest?", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean","Pacific Ocean",  "Pacific Ocean"));
     list.add(new QuestionModel("Which country is known as the 'Land of the Rising Sun'?", "China", "India", "Japan", "South Korea", "Japan"));
     list.add(new QuestionModel("What is the capital of Canada?", "Toronto", "Montreal", "Ottawa", "Vancouver", "Ottawa"));
     list.add(new QuestionModel("Which country is famous for its tulip fields and windmills?", "Italy", "France", "Netherlands", "Spain", "Netherlands"));
@@ -61,7 +61,7 @@ private void setOne(){
         list.add(new QuestionModel("What is the largest lake in Africa?", "Lake Victoria", "Lake Tanganyika", "Lake Malawi", "Lake Chad", "Lake Victoria"));
         list.add(new QuestionModel("Which country is the largest producer of bananas?", "Brazil", "India", "China", "Ecuador", "Ecuador"));
         list.add(new QuestionModel("Which mountain range is located in Europe?", "Andes", "Rocky Mountains", "Himalayas", "Alps", "Alps"));
-        list.add(new QuestionModel("Which country is the largest in terms of land area?", "Russia", "Canada", "China", "United States", "Russia"));
+        list.add(new QuestionModel("Which country is the largest in terms of land area?",  "Canada", "China", "Russia","United States", "Russia"));
         list.add(new QuestionModel("Which ocean is the smallest?", "Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean", "Arctic Ocean"));
         list.add(new QuestionModel("Which country is known as the 'Land Down Under'?", "Brazil", "India", "Australia", "New Zealand", "Australia"));
         list.add(new QuestionModel("What is the capital of Argentina?", "Buenos Aires", "Rio de Janeiro", "Lima", "Santiago", "Buenos Aires"));

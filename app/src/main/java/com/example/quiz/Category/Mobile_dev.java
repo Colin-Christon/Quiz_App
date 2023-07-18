@@ -43,9 +43,9 @@ public class Mobile_dev {
 
     private void setOne(){
         list.add(new QuestionModel("What is the main component responsible for managing the user interface of an Android app?", "Service", "BroadcastReceiver", "Activity", "Fragment", "Activity"));
-        list.add(new QuestionModel("Which programming language is commonly used for Android app development?", "Java", "Swift", "Kotlin", "C#", "Kotlin"));
-        list.add(new QuestionModel("Which layout manager is used to arrange elements in a grid-like structure?", "RelativeLayout", "LinearLayout", "GridLayout", "ConstraintLayout", "GridLayout"));
-        list.add(new QuestionModel("Which file is used to declare the permissions required by an Android app?", "strings.xml", "styles.xml", "AndroidManifest.xml", "build.gradle", "AndroidManifest.xml"));
+        list.add(new QuestionModel("Which programming language is commonly used for Android app development?","Kotlin", "Java", "Swift",  "C#", "Kotlin"));
+        list.add(new QuestionModel("Which layout manager is used to arrange elements in a grid-like structure?", "RelativeLayout", "GridLayout","LinearLayout",  "ConstraintLayout", "GridLayout"));
+        list.add(new QuestionModel("Which file is used to declare the permissions required by an Android app?", "strings.xml", "styles.xml",  "build.gradle","AndroidManifest.xml", "AndroidManifest.xml"));
         list.add(new QuestionModel("Which component is used to perform tasks in the background without a user interface?", "Activity", "BroadcastReceiver", "ContentProvider", "Service", "Service"));
         list.add(new QuestionModel("Which method is called when an Android app is launched?", "onStart()", "onResume()", "onPause()", "onCreate()", "onCreate()"));
         list.add(new QuestionModel("Which keyword is used to define a constant variable in Java?", "static", "final", "const", "var", "final"));
@@ -173,6 +173,5 @@ public class Mobile_dev {
         list.add(new QuestionModel("What is the purpose of the 'adb logcat' command in Android?", "To view the device log messages", "To install APK files", "To capture screenshots", "To debug Android apps", "To view the device log messages"));
         list.add(new QuestionModel("What is the default orientation of an Android app?", "Landscape", "Portrait", "Both Portrait and Landscape", "Sensor", "Portrait"));
         list.add(new QuestionModel("Which component is responsible for managing database operations in Android?", "BroadcastReceiver", "Activity", "Service", "ContentProvider", "ContentProvider"));
-
     }
 }
